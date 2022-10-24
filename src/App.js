@@ -24,9 +24,7 @@ function App() {
   }
 
   const toogleTask = task => {
-
-    setTasksItems(taskItems.map((t) => (t.name === task.name) ? {...t,done: !t.done}: t));
-     
+    setTasksItems(taskItems.map((t) => (t.name === task.name) ? {...t,done: !t.done}: t)); 
   }
 
   useEffect(() => {
@@ -34,7 +32,6 @@ function App() {
     if(data){
        setTasksItems(JSON.parse(data))
     }
-
   },[])
 
   useEffect(() => {
