@@ -4,9 +4,7 @@ export const VisibilityControl = ({
   isChecked,
 }) => {
   const handleDelete = () => {
-    if (
-      window.confirm("¿Esta seguro que desea eliminar las tareas realizadas?")
-    ) {
+    if (window.confirm("¿Esta seguro que desea eliminar las tareas realizadas?")){
       cleanTasks();
     }
   };
